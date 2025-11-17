@@ -1,0 +1,60 @@
+/* === Part 1: CSS Transitions and Animations === */
+
+/* Button hover effect */
+.hover-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.hover-btn:hover {
+  background-color: #2ecc71;
+}
+
+/* Fade-in box */
+.fade-box {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Slide-in box */
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: #f39c12;
+  margin-top: 10px;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.box.slide-in {
+  animation: slideIn 1s ease-out forwards;
+}
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  width: 300px;
+  padding: 20px;
+  background-color: #e74c3c;
+  color: white;
+  position: relative;
+  animation: fadeModal 0.5s ease-in-out forwards;
+}
+.modal.show {
+  display: block;
+}
+@keyframes fadeModal {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

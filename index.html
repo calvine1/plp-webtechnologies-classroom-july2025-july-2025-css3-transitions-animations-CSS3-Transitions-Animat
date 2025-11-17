@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Part 1: CSS Transitions and Animations -->
+  <section id="css-animations">
+    <h2>CSS Animations</h2>
+    <button class="hover-btn">Hover Me</button>
+    <div class="fade-box">I fade in!</div>
+  </section>
+
+  <!-- Part 2: JavaScript Functions -->
+  <section id="js-functions">
+    <h2>JavaScript Functions</h2>
+    <button onclick="showCalculation()">Calculate Speed</button>
+    <p id="calc-result"></p>
+  </section>
+
+  <!-- Part 3: Combined CSS + JS -->
+  <section id="combined-effects">
+    <h2>Combined Effects</h2>
+    <button onclick="triggerAnimation()">Animate Box</button>
+    <div class="box">I slide in!</div>
+    <button onclick="toggleModal()">Toggle Modal</button>
+    <div id="modal" class="modal">Hello from the modal!</div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
